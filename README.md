@@ -1,75 +1,61 @@
-# Nuxt Minimal Starter
+# Portfolio 2024
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Personal portfolio site built with Nuxt 3, showcasing projects and work history.
+
+## Tech Stack
+
+- **[Nuxt 3](https://nuxt.com)** — Vue-based meta-framework
+- **[UnoCSS](https://unocss.dev)** — Atomic CSS engine
+- **[PrimeVue 4](https://primevue.org)** — UI component library (Aura theme)
+- **[Nuxt Image](https://image.nuxt.com)** — Optimized image handling
+- **[Iconify](https://iconify.design)** — Icon sets (ic, logos, material-symbols, simple-icons)
+
+## Pages
+
+| Route | Description |
+|---|---|
+| `/` | Home / landing |
+| `/about` | About me |
+| `/works` | Works index |
+| `/works/asset-tracker` | Asset Tracker project |
+| `/works/movie-db` | Movie DB project |
+| `/others` | Other projects |
+
+## Environment Variables
+
+Create a `.env` file at the project root:
+
+```env
+TMDB_API_KEY=your_tmdb_api_key
+```
 
 ## Setup
 
-Make sure to install dependencies:
-
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## Development
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+npm run dev       # http://localhost:3000
 ```
 
 ## Production
 
-Build the application for production:
-
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+npm run build     # build for production
+npm run preview   # preview production build
+npm run generate  # static site generation
 ```
 
-Locally preview production build:
+## Project Structure
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+components/   # Reusable Vue components
+layouts/      # App layouts
+pages/        # File-based routes
+public/data/  # Static JSON data (projectData.json)
+utils/        # Shared types and utilities
+assets/css/   # Global styles
+```
