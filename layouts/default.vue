@@ -44,7 +44,7 @@ const toggleColorMode = () => {
           </button>
         </ClientOnly>
 
-        <div v-for="menu in menuItems" :key="menu.label">
+        <div v-for="menu in menuItems" :key="menu.route">
           <NuxtLink
             :to="menu.route"
             :class="{
