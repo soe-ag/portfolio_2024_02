@@ -3,6 +3,7 @@ defineProps<{
   id: number;
   title: string;
   description: string;
+  tech: string[];
   image: string;
   link: string;
   github: string;
@@ -11,42 +12,82 @@ defineProps<{
 
 <template>
   <div
-    class="flex flex-col gap-2 md:gap-4 justify-evenly text-gray-300 relative max-w-75"
-    :class="{ 'items-start': id % 2 === 1, 'items-end': id % 2 === 0 }"
+    class="flex flex-col overflow-hidden rounded-xl bg-white dark:bg-gray-800/40 border-2 border-solid border-gray-300 dark:border-gray-700 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-blue-400 dark:hover:border-blue-400 group"
   >
-    <!-- <div
-      class="absolute b-t-1 b-l-1 b-solid b-b-0 b-r-0 b-blue-400 top-0 left-0 w-4 h-4"
-    /> -->
-    <div class="w-full mt-2">
-      <div
-        class="flex gap-2"
-        :class="{ 'justify-start': id % 2 === 1, 'justify-end': id % 2 === 0 }"
-      >
-        <NuxtLink
-          class="decoration-none text-gray-200 hover:text-blue-400 font-semibold"
-          :to="link"
-        >
-          <p class="text-sm text-wrap mx-1">{{ title }}</p>
-        </NuxtLink>
-        <!-- <NuxtLink :to="github" target="_blank">
-          <div
-            class="i-simple-icons-github text-white text-xl hover:text-blue-300"
-          />
-        </NuxtLink> -->
-        <!-- <div class="i-material-symbols-open-in-new hover:cursor-pointer"></div> -->
-      </div>
-      <!-- <p class="text-gray-400 text-sm lg:text-base">
-        {{ description }}
-      </p> -->
-    </div>
-    <NuxtLink class="" :to="link" target="_blank">
+    <!-- Image Box -->
+    <a
+      :href="link"
+      target="_blank"
+      rel="noopener noreferrer"
+      tabindex="-1"
+      class="relative block overflow-hidden aspect-video"
+    >
       <NuxtImg
         :src="image"
-        class="m-auto rounded-2 b-2 b-solid w-35 sm:w-40 md:w-50 lg:w-60 hover:b-blue-400 b-gray-600 hover:cursor-pointer"
+        :alt="title"
+        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
       />
-    </NuxtLink>
-    <!-- <div
-      class="absolute b-t-0 b-l-0 b-solid b-b-1 b-r-1 b-blue-400 bottom-0 right-0 w-4 h-4"
-    /> -->
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-gray-100 dark:from-gray-900 via-transparent to-transparent opacity-80 decoration-none rounded-t-xl"
+      />
+    </a>
+
+    <!-- Content Box -->
+    <div class="flex flex-col flex-1 p-4 md:p-5">
+      <h4
+        class="text-lg font-bold text-gray-900 dark:text-gray-100 mb-2 transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400"
+      >
+        <a
+          :href="link"
+          target="_blank"
+          class="decoration-none text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400"
+          rel="noopener noreferrer"
+          >{{ title }}</a
+        >
+      </h4>
+
+      <p
+        class="text-gray-700 dark:text-gray-400 text-xs md:text-sm leading-relaxed mb-2 flex-1"
+      >
+        {{ description }}
+      </p>
+
+      <!-- Tech Stack -->
+      <div class="flex flex-wrap gap-2">
+        <span
+          v-for="(t, index) in tech"
+          :key="index"
+          class="px-2 py-1 text-xs font-medium rounded-md bg-blue-500/20 dark:bg-blue-500/10 text-blue-700 dark:text-blue-300 border border-blue-500/30 dark:border-blue-500/20"
+        >
+          {{ t }}
+        </span>
+      </div>
+
+      <!-- Links Bottom -->
+      <div
+        class="flex items-center justify-end gap-3 pt-4 border-t border-gray-200 dark:border-gray-700/50 mt-auto"
+      >
+        <a
+          v-if="github"
+          :href="github"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors flex items-center gap-1 decoration-none"
+          title="Source Code"
+        >
+          <div class="i-simple-icons-github text-xl" />
+        </a>
+        <a
+          v-if="link"
+          :href="link"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-1 ml-2 decoration-none"
+          title="Live Demo"
+        >
+          <div class="i-material-symbols-open-in-new text-xl" />
+        </a>
+      </div>
+    </div>
   </div>
 </template>

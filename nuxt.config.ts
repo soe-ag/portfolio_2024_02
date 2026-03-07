@@ -17,29 +17,25 @@ export default defineNuxtConfig({
     "@unocss/nuxt",
     "@primevue/nuxt-module",
     "@nuxt/eslint",
+    "@nuxtjs/color-mode",
   ],
-  // primevue: {
-  //   components: {
-  //     include: "*",
-  //   },
-  // },
-  // css: ["primevue/resources/themes/aura-dark-purple/theme.css"],
+  colorMode: {
+    classSuffix: "",
+    preference: "dark",
+    fallback: "dark",
+  },
   unocss: {
     nuxtLayers: true,
   },
   primevue: {
     usePrimeVue: true,
     options: {
-      // ripple: true,
-      // inputVariant: "filled",
       theme: {
         preset: Aura,
-        // options: {
-        //   prefix: "p",
-        // darkModeSelector: "system",
-        // darkModeSelector: ".my-app-dark",
-        //   cssLayer: false,
-        // },
+        options: {
+          darkModeSelector: ".dark",
+          // cssLayer: false,
+        },
       },
     },
   },

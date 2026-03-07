@@ -12,23 +12,26 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@nuxt/eslint": "^0.6.0",
-    "@primevue/themes": "^4.1.1",
-    "nuxt": "^3.13.2",
-    "primevue": "^4.1.1",
-    "vue": "latest",
-    "vue-router": "latest"
+    "@nuxt/eslint": "^0.6.2",
+    "@primevue/themes": "^4.5.4",
+    "nuxt": "^3.21.1",
+    "primevue": "^4.5.4",
+    "vue": "^3.5.29",
+    "vue-router": "^4.4.5"
   },
   "devDependencies": {
-    "@iconify-json/ic": "^1.2.1",
-    "@iconify-json/logos": "^1.2.3",
-    "@iconify-json/material-symbols": "^1.2.4",
-    "@iconify-json/simple-icons": "^1.2.11",
-    "@nuxt/image": "^1.8.1",
-    "@primevue/nuxt-module": "^4.1.1",
-    "@unocss/nuxt": "^0.63.4",
-    "@unocss/preset-icons": "^0.63.6",
-    "@unocss/preset-web-fonts": "^0.63.4",
-    "unocss": "^0.63.4"
+    "@iconify-json/ic": "^1.2.4",
+    "@iconify-json/logos": "^1.2.10",
+    "@iconify-json/material-symbols": "^1.2.59",
+    "@iconify-json/simple-icons": "^1.2.71",
+    "@nuxt/image": "^1.11.0",
+    "@nuxtjs/color-mode": "^4.0.0",
+    "@primevue/nuxt-module": "^4.5.4",
+    "@unocss/nuxt": "^66.6.2",
+    "@unocss/preset-icons": "^66.6.2",
+    "@unocss/preset-web-fonts": "^66.6.2",
+    "typescript": "^5.9.2",
+    "unocss": "^66.6.2",
+    "vue-tsc": "^3.2.5"
   }
 }

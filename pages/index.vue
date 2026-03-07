@@ -1,15 +1,9 @@
 <script setup lang="ts">
-import works from "~/public/data/projectData.json";
-
-console.log(
-  "https://www.flaticon.com/free-icons/code",
-  " Code icons created by meaicon - Flaticon"
-);
 </script>
 <!-- eslint-disable vue/html-self-closing -->
 <template>
   <div
-    class="text-gray-300 bg-#040D12 flex justify-center items-center h-auto lg:h-90vh px-6 py-2 lg:p-8"
+    class="text-gray-800 dark:text-gray-300 bg-slate-50 dark:bg-#040D12 flex justify-center items-center h-auto lg:h-90vh px-6 py-2 lg:p-8 transition-colors duration-300"
   >
     <div class="grid lg:grid-cols-2 gap-1">
       <div class="m-4 p-2 flex justify-start lg:justify-center items-center">
@@ -20,7 +14,7 @@ console.log(
             <p>SOE AUNG</p>
             <NuxtLink :to="'https://github.com/soe-ag'" target="_blank">
               <div
-                class="i-simple-icons-github text-white text-xl transition hover:scale-120 hover:-rotate-10"
+                class="i-simple-icons-github text-gray-900 dark:text-white text-xl transition hover:scale-120 hover:-rotate-10"
               />
             </NuxtLink>
 
@@ -55,12 +49,16 @@ console.log(
           class="subsection p-4 flex-none basis-full flex justify-center items-center snap-start text-base lg:text-lg w-auto md:w-150 lg:w-auto md:m-auto"
         >
           <div class="px-2 sm:px-4 md:px-6 lg:px-8 py-2 flex-1">
-            <div class="text-gray-300 align-middle">
+            <div class="text-gray-800 dark:text-gray-300 align-middle">
               Frontend engineer skilled in JavaScript, TypeScript, and hands-on
               experience with frameworks like
               <div class="i-logos-vue inline-block text-base"></div>
+              <div class="i-logos-react inline-block text-base ml-1"></div>
               and
               <div class="i-logos-nuxt-icon inline-block text-base ml-1"></div>
+              <div
+                class="i-logos-nextjs-icon inline-block text-base ml-1"
+              ></div>
               . With a master’s degree in engineering, I bring a detail-oriented
               approach and unique perspectives to development. <br /><br /><span
                 class="hidden lg:inline-block"
@@ -86,17 +84,39 @@ console.log(
         >
           <div class="flex flex-col gap-6 justify-evenly flex-1">
             <!-- <p>Experiences</p> -->
-            <div class="m-1">
+            <div
+              class="m-1 p-4 rounded-xl border-2 border-solid border-blue-300 dark:border-transparent transition-colors"
+            >
               <div class="flex gap-2 items-center">
                 <!-- <div class="i-material-symbols-code text-blue-400"></div> -->
                 <NuxtImg src="/images/code.png" class="w-5 h-5" />
 
                 <p class="text-base font-semibold lg:text-xl">
-                  Frontend Developer @444 (MyNavi Group)
+                  Frontend Developer @MyNavi/ 444 Co.Ltd (MyNavi Subsidiary)
                 </p>
               </div>
+
               <p class="text-sm lg:text-base text-gray-500 font-semibold ml-7">
-                2023 July - <span class="underline">Present</span>
+                2025 April - <span class="underline">Present</span>
+              </p>
+              <ul class="ml-7 my-2 lg:list-none">
+                <li>Contributed Locus Platform.</li>
+                <li>
+                  Working on new features which include field study events and
+                  company lectures.
+                </li>
+                <li>Built and test components and features.</li>
+              </ul>
+              <div class="flex gap-3 text-xl ml-7 mb-4">
+                <div class="i-logos-react"></div>
+                <div class="i-logos-nextjs-icon"></div>
+                <div class="i-logos-typescript-icon"></div>
+                <div class="i-logos-pandacss-icon"></div>
+                <div class="i-logos-figma"></div>
+              </div>
+
+              <p class="text-sm lg:text-base text-gray-500 font-semibold ml-7">
+                2023 July - 2025 March
               </p>
               <ul class="ml-7 my-2 lg:list-none">
                 <li>
@@ -124,7 +144,9 @@ console.log(
                 <div class="i-logos-figma"></div>
               </div>
             </div>
-            <div class="m-1">
+            <div
+              class="m-1 p-4 rounded-xl border-2 border-solid border-blue-300 dark:border-transparent transition-colors"
+            >
               <div class="flex gap-2 items-center">
                 <!-- <div class="i-material-symbols-code text-blue-400"></div> -->
                 <NuxtImg src="/images/code.png" class="w-5 h-5" />
@@ -158,25 +180,11 @@ console.log(
               </div>
             </div>
           </div>
-          <div class="hidden lg:block w-10">
+          <!-- <div class="hidden lg:block w-10">
             <div
               class="i-material-symbols-arrow-cool-down-rounded text-2xl animate-bounce"
             ></div>
-          </div>
-        </section>
-        <section
-          id="section3"
-          class="subsection p-4 flex-none basis-full flex justify-center items-center snap-start flex flex-col gap-6 p-2 w-auto md:w-150 lg:w-auto md:m-auto"
-        >
-          <div v-for="work in works" :key="work.id" class="w-full">
-            <WorkCard
-              :id="work.id"
-              :title="work.title"
-              :description="work.description"
-              :image="work.image"
-              :link="work.link"
-            />
-          </div>
+          </div> -->
         </section>
         <!-- <div id="section4" class="subsection">Section 4</div> -->
       </div>
