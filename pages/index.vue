@@ -7,7 +7,7 @@ console.log(
 <!-- eslint-disable vue/html-self-closing -->
 <template>
   <div
-    class="text-gray-300 bg-#040D12 flex justify-center items-center h-auto lg:h-90vh px-6 py-2 lg:p-8"
+    class="text-gray-800 dark:text-gray-300 bg-slate-50 dark:bg-#040D12 flex justify-center items-center h-auto lg:h-90vh px-6 py-2 lg:p-8 transition-colors duration-300"
   >
     <div class="grid lg:grid-cols-2 gap-1">
       <div class="m-4 p-2 flex justify-start lg:justify-center items-center">
@@ -18,7 +18,7 @@ console.log(
             <p>SOE AUNG</p>
             <NuxtLink :to="'https://github.com/soe-ag'" target="_blank">
               <div
-                class="i-simple-icons-github text-white text-xl transition hover:scale-120 hover:-rotate-10"
+                class="i-simple-icons-github text-gray-900 dark:text-white text-xl transition hover:scale-120 hover:-rotate-10"
               />
             </NuxtLink>
 
@@ -53,7 +53,7 @@ console.log(
           class="subsection p-4 flex-none basis-full flex justify-center items-center snap-start text-base lg:text-lg w-auto md:w-150 lg:w-auto md:m-auto"
         >
           <div class="px-2 sm:px-4 md:px-6 lg:px-8 py-2 flex-1">
-            <div class="text-gray-300 align-middle">
+            <div class="text-gray-800 dark:text-gray-300 align-middle">
               Frontend engineer skilled in JavaScript, TypeScript, and hands-on
               experience with frameworks like
               <div class="i-logos-vue inline-block text-base"></div>
@@ -88,7 +88,9 @@ console.log(
         >
           <div class="flex flex-col gap-6 justify-evenly flex-1">
             <!-- <p>Experiences</p> -->
-            <div class="m-1">
+            <div
+              class="m-1 p-4 rounded-xl border-2 border-solid border-blue-300 dark:border-transparent transition-colors"
+            >
               <div class="flex gap-2 items-center">
                 <!-- <div class="i-material-symbols-code text-blue-400"></div> -->
                 <NuxtImg src="/images/code.png" class="w-5 h-5" />
@@ -146,7 +148,9 @@ console.log(
                 <div class="i-logos-figma"></div>
               </div>
             </div>
-            <div class="m-1">
+            <div
+              class="m-1 p-4 rounded-xl border-2 border-solid border-blue-300 dark:border-transparent transition-colors"
+            >
               <div class="flex gap-2 items-center">
                 <!-- <div class="i-material-symbols-code text-blue-400"></div> -->
                 <NuxtImg src="/images/code.png" class="w-5 h-5" />

@@ -21,7 +21,7 @@ export const professionalWorks = [
     category: "Professional Works",
     title: "TechFUL (discontinued)",
     description:
-      "A programming skill assessment coding platform by 444 Inc., featuring over hundreds of unique challenges to enhance development skills.",
+      "A programming skill assessment coding platform by 444 Inc., featuring over hundreds of unique challenges to enhance skills.",
     tech: ["Vue 3", "Nuxt 3", "TypeScript"],
     image: "/images/part-techful.png",
     link: "https://techful-programming.com/",
