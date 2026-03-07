@@ -19,6 +19,7 @@ defineProps<{
       :href="link"
       target="_blank"
       rel="noopener noreferrer"
+      tabindex="-1"
       class="relative block overflow-hidden aspect-video"
     >
       <NuxtImg

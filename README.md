@@ -19,6 +19,7 @@ Modern personal portfolio website designed to showcase professional experience, 
 
 ### Features & Tools
 - **[@nuxt/image](https://image.nuxt.com)** - Image optimization for performance.
+- **[@nuxtjs/color-mode](https://color-mode.nuxtjs.org/)** - Dark/light theme switching and color scheme persistence.
 - **[Vue Router](https://router.vuejs.org/)** - Single Page Application navigation.
 - **ESLint** - Code quality and consistency with `@nuxt/eslint`.
 - **Web Replicas** - Practice implementations of existing professional designs.

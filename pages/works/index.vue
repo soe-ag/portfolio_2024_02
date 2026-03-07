@@ -1,11 +1,10 @@
 <script setup lang="ts">
 const categories = projectCategories;
-const items = ref(projectItems);
 
 const groupedItems = computed(() => {
-  const groups: Record<string, typeof items.value> = {};
+  const groups: Record<string, typeof projectItems> = {};
   categories.forEach((cat) => {
-    groups[cat] = items.value.filter((item) => item.category === cat);
+    groups[cat] = projectItems.filter((item) => item.category === cat);
   });
   return groups;
 });

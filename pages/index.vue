@@ -1,8 +1,4 @@
 <script setup lang="ts">
-console.log(
-  "https://www.flaticon.com/free-icons/code",
-  " Code icons created by meaicon - Flaticon",
-);
 </script>
 <!-- eslint-disable vue/html-self-closing -->
 <template>

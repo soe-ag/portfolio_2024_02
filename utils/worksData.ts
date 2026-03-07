@@ -10,7 +10,7 @@ export const professionalWorks = [
     category: "Professional Works",
     title: "Locus",
     description:
-      "Platform for industry-excursion for high school students in rural areas by MyNavi Coporation.",
+      "Platform for industry-excursion for high school students in rural areas by MyNavi Corporation.",
     tech: ["React", "Next.js", "TypeScript"],
     image: "/images/full-locus.png",
     link: "https://locus.mynavi.jp/",
@@ -113,7 +113,7 @@ export const vibeCoding = [
     category: "Vibe Coding",
     title: "Ecommerce Platform",
     description:
-      "A E-commerce platform features a full storefront, order tracking, and a comprehensive admin dashboard.",
+      "An E-commerce platform features a full storefront, order tracking, and a comprehensive admin dashboard.",
     tech: ["React", "Next.js", "TypeScript", "Convex"],
     image: "/images/ato-ecommerce.png",
     link: "https://ato-may-mm-my-test-ncs.vercel.app/",
