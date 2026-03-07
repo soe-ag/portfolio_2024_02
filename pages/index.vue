@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import works from "~/public/data/projectData.json";
-
 console.log(
   "https://www.flaticon.com/free-icons/code",
-  " Code icons created by meaicon - Flaticon"
+  " Code icons created by meaicon - Flaticon",
 );
 </script>
 <!-- eslint-disable vue/html-self-closing -->
@@ -162,20 +160,6 @@ console.log(
             <div
               class="i-material-symbols-arrow-cool-down-rounded text-2xl animate-bounce"
             ></div>
-          </div>
-        </section>
-        <section
-          id="section3"
-          class="subsection p-4 flex-none basis-full flex justify-center items-center snap-start flex flex-col gap-6 p-2 w-auto md:w-150 lg:w-auto md:m-auto"
-        >
-          <div v-for="work in works" :key="work.id" class="w-full">
-            <WorkCard
-              :id="work.id"
-              :title="work.title"
-              :description="work.description"
-              :image="work.image"
-              :link="work.link"
-            />
           </div>
         </section>
         <!-- <div id="section4" class="subsection">Section 4</div> -->
