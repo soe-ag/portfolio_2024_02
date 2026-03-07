@@ -1,61 +1,37 @@
 # Portfolio 2024
 
-Personal portfolio site built with Nuxt 3, showcasing projects and work history.
+Modern personal portfolio website designed to showcase professional experience, development skills, and personal projects.
 
-## Tech Stack
+## 🛠 Tech Stack
 
-- **[Nuxt 3](https://nuxt.com)** — Vue-based meta-framework
-- **[UnoCSS](https://unocss.dev)** — Atomic CSS engine
-- **[PrimeVue 4](https://primevue.org)** — UI component library (Aura theme)
-- **[Nuxt Image](https://image.nuxt.com)** — Optimized image handling
-- **[Iconify](https://iconify.design)** — Icon sets (ic, logos, material-symbols, simple-icons)
+### Core
+- **[Nuxt 3](https://nuxt.com)** - Vue.js Framework with File-based Routing and Auto-imports.
+- **[Vue 3](https://vuejs.org/)** - For reactive and component-based user interface.
+- **[TypeScript](https://www.typescriptlang.org/)** - For type-safe development.
 
-## Pages
+### Styling & UI
+- **[UnoCSS](https://unocss.dev)** - High-performance atomic CSS engine.
+  - **Presets**: `icons`, `web-fonts`, `typography`.
+- **[PrimeVue 4](https://primevue.org)** - Comprehensive UI component library.
+  - Using the **Aura** theme for a modern look.
+- **[Iconify](https://iconify.design)** - Multi-set icon integration.
+  - Collections: Material Symbols, Simple Icons, Logos, and Ic.
 
-| Route | Description |
-|---|---|
-| `/` | Home / landing |
-| `/about` | About me |
-| `/works` | Works index |
-| `/works/asset-tracker` | Asset Tracker project |
-| `/works/movie-db` | Movie DB project |
-| `/others` | Other projects |
+### Features & Tools
+- **[@nuxt/image](https://image.nuxt.com)** - Image optimization for performance.
+- **[Vue Router](https://router.vuejs.org/)** - Single Page Application navigation.
+- **ESLint** - Code quality and consistency with `@nuxt/eslint`.
+- **Web Replicas** - Practice implementations of existing professional designs.
 
-## Environment Variables
+## 📁 Project Structure
 
-Create a `.env` file at the project root:
+- `components/`: Modular UI components (e.g., `ArchiveCard`, `WorkCard`).
+- `pages/`: Dynamic routes for Home, Works, and Project details.
+- `utils/`: Data management and categorized constants (`worksData.ts`).
+- `layouts/`: Shared page structures and navigation.
 
-```env
-TMDB_API_KEY=your_tmdb_api_key
-```
-
-## Setup
-
-```bash
-npm install
-```
-
-## Development
-
-```bash
-npm run dev       # http://localhost:3000
-```
-
-## Production
-
-```bash
-npm run build     # build for production
-npm run preview   # preview production build
-npm run generate  # static site generation
-```
-
-## Project Structure
-
-```
-components/   # Reusable Vue components
-layouts/      # App layouts
-pages/        # File-based routes
-public/data/  # Static JSON data (projectData.json)
-utils/        # Shared types and utilities
-assets/css/   # Global styles
-```
+## 📜 Key Packages
+- Nuxt 3.21+
+- PrimeVue 4.5+
+- UnoCSS 66.6+
+- TypeScript 5.9+

@@ -6,6 +6,17 @@ export const projectCategories = [
 
 export const professionalWorks = [
   {
+    id: 10,
+    category: "Professional Works",
+    title: "Locus",
+    description:
+      "Platform for industry-excursion for high school students in rural areas by MyNavi Coporation.",
+    tech: ["React", "Next.js", "TypeScript"],
+    image: "/images/full-locus.png",
+    link: "https://locus.mynavi.jp/",
+    github: "",
+  },
+  {
     id: 1,
     category: "Professional Works",
     title: "TechFUL (discontinued)",
@@ -22,10 +33,11 @@ export const professionalWorks = [
     title: "Botha Gallery Website",
     description:
       "A gallery site for displaying official art. Implements a responsive grid and interactive viewing experience.",
-    tech: ["Nuxt", "TailwindCSS"],
+    tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/oldworks/part-botha-gallery (2).png",
     link: "https://lp.bo-tha.com/official_character_gallery/202212/",
-    github: "https://github.com/soe-ag/botha_compe_artlist",
+    // github: "https://github.com/soe-ag/botha_compe_artlist",
+    github: "",
   },
   {
     id: 3,
@@ -33,7 +45,7 @@ export const professionalWorks = [
     title: "Botha Official Website",
     description:
       "(Web Replica) A clone of the Botha official website to practice layout structures and modern CSS features.",
-    tech: ["HTML", "SCSS", "JavaScript"],
+    tech: ["HTML", "CSS"],
     image: "/images/oldworks/part-botha (2).png",
     link: "https://soe-ag.github.io/botha_about_clone/",
     github: "https://github.com/soe-ag/botha_about_clone",
@@ -44,7 +56,7 @@ export const professionalWorks = [
     title: "Botha Competition Website",
     description:
       "(Web Replica) Promotional landing page clone for an art competition. Includes scroll animations and responsive design.",
-    tech: ["Nuxt", "TailwindCSS"],
+    tech: ["HTML", "CSS"],
     image: "/images/oldworks/part-botha-competition (2).png",
     link: "https://soe-ag.github.io/botha_compete_clone/",
     github: "https://github.com/soe-ag/botha_compete_clone",
@@ -55,14 +67,59 @@ export const professionalWorks = [
     title: "Egodiva Marketing Website",
     description:
       "(Web Replica) A marketing landing page clone with focus on visual aesthetics and scroll-trigger animations.",
-    tech: ["Vue 3", "Vite", "TailwindCSS"],
+    tech: ["HTML", "CSS"],
     image: "/images/oldworks/part-egodia-marketing (2).png",
     link: "https://soe-ag.github.io/egodiva_marketing_clone/",
     github: "https://github.com/soe-ag/egodiva_marketing_clone",
   },
 ];
 
-export const vibeCoding = [];
+export const vibeCoding = [
+  {
+    id: 1,
+    category: "Vibe Coding",
+    title: "LGTM Woof",
+    description:
+      "A web application for generating 'LGTM' dog images to spice up your Pull Requests. ",
+    tech: ["React", "Next.js", "TypeScript", "Convex"],
+    image: "/images/lgtm-woof.png",
+    link: "https://lgtm-woof.vercel.app/",
+    github: "https://github.com/soe-ag/lgtm-woof",
+  },
+  {
+    id: 2,
+    category: "Vibe Coding",
+    title: "Share Finance",
+    description:
+      "A mobile-first Progressive Web App (PWA) for splitting group expenses with friends.",
+    tech: ["React", "Next.js", "TypeScript"],
+    image: "/images/share-finance.png",
+    link: "https://share-finance.vercel.app/",
+    github: "https://github.com/soe-ag/share-finance",
+  },
+  {
+    id: 3,
+    category: "Vibe Coding",
+    title: "My Finance",
+    description:
+      "A personal finance tracking application to track balances across different accounts, visualize growth, and manage your portfolio with ease.",
+    tech: ["React", "Next.js", "TypeScript", "Convex"],
+    image: "/images/my-finance.png",
+    link: "https://my-finance-woad.vercel.app/",
+    github: "https://github.com/soe-ag/my-finance",
+  },
+  {
+    id: 4,
+    category: "Vibe Coding",
+    title: "Ecommerce Platform",
+    description:
+      "A E-commerce platform features a full storefront, order tracking, and a comprehensive admin dashboard.",
+    tech: ["React", "Next.js", "TypeScript", "Convex"],
+    image: "/images/ato-ecommerce.png",
+    link: "https://ato-may-mm-my-test-ncs.vercel.app/",
+    github: "https://github.com/soe-ag/ato-may-mm-my-test-ncs-",
+  },
+];
 
 export const personalProjects = [
   {
@@ -71,7 +128,7 @@ export const personalProjects = [
     title: "Personalized Movie Database",
     description:
       "Simple movie database designed to track and save watchlist and favorites, tailored to personal preferences.",
-    tech: ["Nuxt 3", "TailwindCSS"],
+    tech: ["Vue 3", "Nuxt 3", "TailwindCSS"],
     image: "/images/part-movie.png",
     link: "/works/movie-db",
     github: "",
@@ -82,7 +139,7 @@ export const personalProjects = [
     title: "Asset Tracker",
     description:
       "Personalized asset tracking dashboard to monitor favorite assets and customizable charts, designed for simplicity and ease of use.",
-    tech: ["Nuxt 3", "TailwindCSS"],
+    tech: ["Vue 3", "Nuxt 3", "TailwindCSS"],
     image: "/images/part-asset.png",
     link: "/works/asset-tracker",
     github: "",
@@ -93,7 +150,7 @@ export const personalProjects = [
     title: "Old Portfolio Website",
     description:
       "My previous portfolio featuring a clean design focused on presenting works and providing personal information.",
-    tech: ["HTML", "CSS", "JavaScript"],
+    tech: ["HTML", "SCSS", "JavaScript"],
     image: "/images/oldworks/part-old-port (2).png",
     link: "https://portfolio0223.netlify.app/",
     github: "https://github.com/soe-ag/portfolio_2023feb",

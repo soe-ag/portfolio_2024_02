@@ -13,7 +13,7 @@ const menuItems = ref([
   // },
   {
     label: "",
-    icon: "i-material-symbols-folder-open-rounded",
+    icon: "i-material-symbols-create-new-folder",
     route: "/works",
   },
   // {
