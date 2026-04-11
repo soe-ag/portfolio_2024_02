@@ -1,3 +1,5 @@
+<!-- not used -->
+
 <script setup lang="ts">
 // const data = await useFetch("https://v3.football.api-sports.io/leagues", {
 //   method: "GET",

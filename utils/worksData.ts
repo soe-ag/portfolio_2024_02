@@ -1,7 +1,7 @@
 export const projectCategories = [
   "Professional Works",
   "Personal Projects",
-  "Vibe Coding",
+  "Agentic Coding",
 ];
 
 export const professionalWorks = [
@@ -74,10 +74,10 @@ export const professionalWorks = [
   },
 ];
 
-export const vibeCoding = [
+export const agenticCoding = [
   {
     id: 1,
-    category: "Vibe Coding",
+    category: "Agentic Coding",
     title: "LGTM Woof",
     description:
       "A web application for generating 'LGTM' dog images to spice up your Pull Requests. ",
@@ -88,7 +88,7 @@ export const vibeCoding = [
   },
   {
     id: 2,
-    category: "Vibe Coding",
+    category: "Agentic Coding",
     title: "Share Finance",
     description:
       "A mobile-first Progressive Web App (PWA) for splitting group expenses with friends.",
@@ -99,7 +99,7 @@ export const vibeCoding = [
   },
   {
     id: 3,
-    category: "Vibe Coding",
+    category: "Agentic Coding",
     title: "My Finance",
     description:
       "A personal finance tracking application to track balances across different accounts, visualize growth, and manage your portfolio with ease.",
@@ -110,7 +110,7 @@ export const vibeCoding = [
   },
   {
     id: 4,
-    category: "Vibe Coding",
+    category: "Agentic Coding",
     title: "Ecommerce Platform",
     description:
       "An E-commerce platform features a full storefront, order tracking, and a comprehensive admin dashboard.",
@@ -160,5 +160,5 @@ export const personalProjects = [
 export const projectItems = [
   ...professionalWorks,
   ...personalProjects,
-  ...vibeCoding,
+  ...agenticCoding,
 ];

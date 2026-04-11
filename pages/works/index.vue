@@ -52,6 +52,18 @@ const groupedItems = computed(() => {
         </div>
       </div>
     </template>
+    <div class="flex gap-2 justify-end">
+      More at
+      <a
+        href="https://github.com/soe-ag"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors flex items-center gap-1 decoration-none"
+        title="Source Code"
+      >
+        <div class="i-simple-icons-github text-xl" />
+      </a>
+    </div>
   </div>
 </template>
 
