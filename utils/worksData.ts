@@ -75,16 +75,27 @@ export const professionalWorks = [
 ];
 
 export const agenticCoding = [
+  // {
+  //   id: 1,
+  //   category: "Agentic Coding",
+  //   title: "LGTM Woof",
+  //   description:
+  //     "A web application for generating 'LGTM' dog images to spice up your Pull Requests. ",
+  //   tech: ["React", "Next.js", "TypeScript", "Convex"],
+  //   image: "/images/lgtm-woof.png",
+  //   link: "https://lgtm-woof.vercel.app/",
+  //   github: "https://github.com/soe-ag/lgtm-woof",
+  // },
   {
     id: 1,
     category: "Agentic Coding",
-    title: "LGTM Woof",
+    title: "Options Journal",
     description:
-      "A web application for generating 'LGTM' dog images to spice up your Pull Requests. ",
+      "A web application for recording and analyzing options trading performance.",
     tech: ["React", "Next.js", "TypeScript", "Convex"],
-    image: "/images/lgtm-woof.png",
-    link: "https://lgtm-woof.vercel.app/",
-    github: "https://github.com/soe-ag/lgtm-woof",
+    image: "/images/options-journal.png",
+    link: "https://my-options-journal.vercel.app/",
+    github: "https://github.com/soe-ag/my-options-journal",
   },
   {
     id: 2,
@@ -116,8 +127,19 @@ export const agenticCoding = [
       "An E-commerce platform features a full storefront, order tracking, and a comprehensive admin dashboard.",
     tech: ["React", "Next.js", "TypeScript", "Convex"],
     image: "/images/ato-ecommerce.png",
-    link: "https://ato-may-mm-my-test-ncs.vercel.app/",
+    link: "https://may-mm-prod.vercel.app/",
     github: "https://github.com/soe-ag/ato-may-mm-my-test-ncs-",
+  },
+  {
+    id: 4,
+    category: "Agentic Coding",
+    title: "Repo Monitor",
+    description:
+      "A tool for monitoring packages dependency versions, CI/CD status, and readme updates etc.",
+    tech: ["React", "Next.js", "TypeScript", "Convex"],
+    image: "/images/repo-monitor.png",
+    link: "https://repo-monitor-bice.vercel.app/",
+    github: "https://github.com/soe-ag/repo-monitor",
   },
 ];
 
