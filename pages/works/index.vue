@@ -52,7 +52,7 @@ const groupedItems = computed(() => {
         </div>
       </div>
     </template>
-    <div class="flex gap-2 justify-end">
+    <div class="flex gap-2 justify-end text-gray-500">
       More at
       <a
         href="https://github.com/soe-ag"

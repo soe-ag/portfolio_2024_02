@@ -1,5 +1,4 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 <!-- eslint-disable vue/html-self-closing -->
 <template>
   <div
@@ -85,7 +84,7 @@
           <div class="flex flex-col gap-6 justify-evenly flex-1">
             <!-- <p>Experiences</p> -->
             <div
-              class="m-1 p-4 rounded-xl border-2 border-solid border-blue-300 dark:border-transparent transition-colors"
+              class="m-1 p-4 rounded-xl dark:border-transparent transition-colors"
             >
               <div class="flex gap-2 items-center">
                 <!-- <div class="i-material-symbols-code text-blue-400"></div> -->
@@ -145,7 +144,7 @@
               </div>
             </div>
             <div
-              class="m-1 p-4 rounded-xl border-2 border-solid border-blue-300 dark:border-transparent transition-colors"
+              class="m-1 p-4 rounded-xl dark:border-transparent transition-colors"
             >
               <div class="flex gap-2 items-center">
                 <!-- <div class="i-material-symbols-code text-blue-400"></div> -->
