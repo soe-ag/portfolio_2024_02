@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "test": "vitest"
   },
   "dependencies": {
     "@nuxt/eslint": "^1.15.2",
@@ -25,13 +26,17 @@
     "@iconify-json/material-symbols": "^1.2.76",
     "@iconify-json/simple-icons": "^1.2.85",
     "@nuxt/image": "^2.0.0",
+    "@nuxt/test-utils": "^4.0.3",
     "@nuxtjs/color-mode": "^4.0.0",
     "@primevue/nuxt-module": "^4.5.5",
     "@unocss/nuxt": "^66.7.0",
     "@unocss/preset-icons": "^66.7.0",
     "@unocss/preset-web-fonts": "^66.7.0",
+    "@vue/test-utils": "^2.4.11",
+    "happy-dom": "^20.10.2",
     "typescript": "^6.0.3",
     "unocss": "^66.7.0",
+    "vitest": "^4.1.8",
     "vue-tsc": "^3.3.4"
   }
 }

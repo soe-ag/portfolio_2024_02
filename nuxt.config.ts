@@ -14,11 +14,11 @@ export default defineNuxtConfig({
 
   modules: [
     "@nuxt/image",
-    "@unocss/nuxt",
+    process.env.VITEST ? undefined : "@unocss/nuxt",
     "@primevue/nuxt-module",
     "@nuxt/eslint",
     "@nuxtjs/color-mode",
-  ],
+  ].filter(Boolean) as any,
   colorMode: {
     classSuffix: "",
     preference: "dark",
