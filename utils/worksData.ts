@@ -113,7 +113,7 @@ export const agenticCoding = [
     category: "Agentic Coding",
     title: "My Finance",
     description:
-      "A personal finance tracking application to track balances across different accounts, visualize growth, and manage your portfolio with ease.",
+      "A personal finance tracking application to track balances across different accounts, visualize growth, and manage portfolio with ease.",
     tech: ["React", "Next.js", "TypeScript", "Convex"],
     image: "/images/my-finance.png",
     link: "https://my-finance-woad.vercel.app/",

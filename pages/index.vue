@@ -49,7 +49,7 @@
         >
           <div class="px-2 sm:px-4 md:px-6 lg:px-8 py-2 flex-1">
             <div class="text-gray-800 dark:text-gray-300 align-middle">
-              Frontend engineer skilled in JavaScript, TypeScript, and hands-on
+              Frontend developer skilled in JavaScript, TypeScript, and hands-on
               experience with frameworks like
               <div class="i-logos-vue inline-block text-base"></div>
               <div class="i-logos-react inline-block text-base ml-1"></div>
@@ -67,8 +67,8 @@
                 enjoyable for users.<br /><br
               /></span>
               In addition to web development, I have an interest in 3D modeling,
-              blockchain, and AI, and I enjoy finding practical ways to
-              integrate emerging technologies into modern digital experiences.
+              fintech, and AI, and I enjoy finding practical ways to integrate
+              emerging technologies into modern digital experiences.
             </div>
           </div>
           <div class="hidden lg:block w-10">
@@ -91,7 +91,7 @@
                 <NuxtImg src="/images/code.png" class="w-5 h-5" />
 
                 <p class="text-base font-semibold lg:text-xl">
-                  Frontend Developer @MyNavi/ 444 Co.Ltd (MyNavi Subsidiary)
+                  Frontend Developer @MyNavi
                 </p>
               </div>
 
@@ -99,12 +99,16 @@
                 2025 April - <span class="underline">Present</span>
               </p>
               <ul class="ml-7 my-2 lg:list-none">
-                <li>Contributed Locus Platform.</li>
                 <li>
-                  Working on new features which include field study events and
-                  company lectures.
+                  Contributing development of Locus Platform which is
+                  local-based<br />
+                  learning program for high school students.
                 </li>
-                <li>Built and test components and features.</li>
+                <li>
+                  Working on new features such as field study events and company
+                  lectures.
+                </li>
+                <!-- <li>Built and test components and features.</li>  -->
               </ul>
               <div class="flex gap-3 text-xl ml-7 mb-4">
                 <div class="i-logos-react"></div>
@@ -115,9 +119,13 @@
               </div>
 
               <p class="text-sm lg:text-base text-gray-500 font-semibold ml-7">
-                2023 July - 2025 March
+                2023 July - 2025 March (@MyNavi Subsidiary)
               </p>
               <ul class="ml-7 my-2 lg:list-none">
+                <li>
+                  Participated in the development of TechFUL, a programming
+                  learning platform.
+                </li>
                 <li>
                   Migrated Vue2 to Vue3/Nuxt3, enhancing performance and
                   maintainability.
@@ -126,13 +134,11 @@
                   Implemented multilingual support with i18n and responsive user
                   interfaces.
                 </li>
-                <li>
-                  Built shared components through Story (Historie) testing.
-                </li>
-                <li>
+                <li>Built shared components through Story (Historie).</li>
+                <!-- <li>
                   Resolved feature bugs and carried out new features
                   implementation.
-                </li>
+                </li> -->
               </ul>
 
               <div class="flex gap-3 text-xl ml-7">
@@ -160,15 +166,14 @@
 
               <ul class="ml-7 my-2 lg:list-none">
                 <li>
-                  Developd landing pages that align with the design mock-ups.
+                  Developed landing pages that align with the design mock-ups.
                 </li>
-                <li>
+                <!-- <li>
                   Created visually compelling websites to meet the client's
                   marketing goals.
-                </li>
+                </li> -->
                 <li>
-                  Updated websites according to marketing campaign and SEO
-                  standards.
+                  Updated websites according to the client's marketing campaign.
                 </li>
               </ul>
               <div class="flex gap-3 text-xl ml-7">
