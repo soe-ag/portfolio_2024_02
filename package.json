@@ -15,7 +15,7 @@
   "dependencies": {
     "@nuxt/eslint": "^1.15.2",
     "@primevue/themes": "^4.5.4",
-    "nuxt": "^4.4.7",
+    "nuxt": "^4.4.8",
     "primevue": "^4.5.5",
     "vue": "^3.5.39",
     "vue-router": "^5.1.0"
