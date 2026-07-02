@@ -37,11 +37,13 @@ describe('ArchiveCard', () => {
     })
 
     const links = component.findAll('a')
-    // One for image, one for title, one for github, one for external link
-    // Wait, let's check ArchiveCard.vue again
-    // Image link, Title link, GitHub link, Live Demo link
     expect(links.length).toBe(4)
-    expect(links[0].attributes('href')).toBe('https://example.com')
-    expect(links[2].attributes('href')).toBe('https://github.com/test')
+    const imageLink = links[0]
+    const githubLink = links[2]
+
+    expect(imageLink).toBeDefined()
+    expect(githubLink).toBeDefined()
+    expect(imageLink?.attributes('href')).toBe('https://example.com')
+    expect(githubLink?.attributes('href')).toBe('https://github.com/test')
   })
 })

@@ -2,6 +2,8 @@
 
 import Aura from "@primevue/themes/aura";
 
+const isDefined = <T>(value: T | undefined): value is T => value !== undefined;
+
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
@@ -18,7 +20,7 @@ export default defineNuxtConfig({
     "@primevue/nuxt-module",
     "@nuxt/eslint",
     "@nuxtjs/color-mode",
-  ].filter(Boolean) as any,
+  ].filter(isDefined),
   colorMode: {
     classSuffix: "",
     preference: "dark",
