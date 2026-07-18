@@ -17,6 +17,4 @@ updates:
     assignees:
       - "soe-ag"
     cooldown:
-      semver-major-days: 30
-      semver-minor-days: 90
-      semver-patch-days: 90
+      default-days: 90
