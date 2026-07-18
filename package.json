@@ -23,7 +23,7 @@
   "devDependencies": {
     "@iconify-json/ic": "^1.2.4",
     "@iconify-json/logos": "^1.2.11",
-    "@iconify-json/material-symbols": "^1.2.82",
+    "@iconify-json/material-symbols": "^1.2.85",
     "@iconify-json/simple-icons": "^1.2.85",
     "@nuxt/image": "^2.0.0",
     "@nuxt/test-utils": "^4.0.3",
