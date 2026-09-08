@@ -4,7 +4,17 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
+    assignees:
+      - "soe-ag"
+    cooldown:
+      semver-major-days: 30
+      semver-minor-days: 90
+      semver-patch-days: 90
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "monthly"
+    assignees:
+      - "soe-ag"
+    cooldown:
+      default-days: 90
