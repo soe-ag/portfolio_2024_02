@@ -28,7 +28,7 @@
     "@nuxt/image": "^2.0.0",
     "@nuxt/test-utils": "^4.0.3",
     "@nuxtjs/color-mode": "^4.0.0",
-    "@primevue/nuxt-module": "^4.5.5",
+    "@primevue/nuxt-module": "^5.0.0",
     "@unocss/nuxt": "^66.7.0",
     "@unocss/preset-icons": "^66.7.4",
     "@unocss/preset-web-fonts": "^66.7.0",
