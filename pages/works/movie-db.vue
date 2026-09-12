@@ -4,7 +4,7 @@ import ScrollTop from "primevue/scrolltop";
 
 <template>
   <div class="mx-auto py-8 px-6 flex justify-center max-w-250">
-    <div class="main flex flex-col gap-6 text-gray-400">
+    <div class="main flex flex-col gap-6 text-gray-700 dark:text-gray-300">
       <NuxtLink
         class="flex gap-2 items-center mb-2 hover:cursor-pointer hover:text-blue-300 text-blue-400 decoration-none"
         :to="'https://movie-db-beta.netlify.app/'"
@@ -18,13 +18,13 @@ import ScrollTop from "primevue/scrolltop";
         <div class="flex flex-col gap-4 max-md:order-2">
           <div>
             <div class="flex gap-4 items-center mb-2">
-              <h3 class="text-gray-300">Overview</h3>
+              <h3 class="text-gray-900 dark:text-gray-100">Overview</h3>
               <NuxtLink
                 :to="'https://github.com/soe-ag/practice-local-movie-source'"
                 target="_blank"
               >
                 <div
-                  class="i-simple-icons-github text-white text-xl hover:text-blue-300"
+                    class="i-simple-icons-github text-gray-700 dark:text-gray-200 text-xl hover:text-blue-500 dark:hover:text-blue-300"
                 />
               </NuxtLink>
             </div>
@@ -41,7 +41,7 @@ import ScrollTop from "primevue/scrolltop";
             </p>
           </div>
           <div>
-            <h3 class="text-gray-300 mb-2">Features</h3>
+            <h3 class="text-gray-900 dark:text-gray-100 mb-2">Features</h3>
             <ul class="ml-4 text-sm mb-2">
               <li>
                 Discover trending movies and explore the latest popular titles.
@@ -78,7 +78,7 @@ import ScrollTop from "primevue/scrolltop";
           <div class="i-logos-supabase-icon" />
         </div>
         <div>
-          <h3 class="text-gray-300 mb-2">Stack and explanation</h3>
+          <h3 class="text-gray-900 dark:text-gray-100 mb-2">Stack and explanation</h3>
           <p class="text-sm">
             For this project, I chose Nuxt for its server-side rendering (SSR)
             and straightforward routing, leveraging my Vue experience. I used
@@ -94,7 +94,7 @@ import ScrollTop from "primevue/scrolltop";
 
       <section class="grid md:grid-cols-2 gap-4 grid-cols-1">
         <div>
-          <h3 class="text-gray-300 mb-2">Problems and thought process</h3>
+          <h3 class="text-gray-900 dark:text-gray-100 mb-2">Problems and thought process</h3>
           <p class="text-sm">
             I initially used local storage to save data, as I wasn't familiar
             with Firebase or Supabase. However, as the project grew, I realized
@@ -131,7 +131,7 @@ import ScrollTop from "primevue/scrolltop";
           />
         </div>
         <div>
-          <h3 class="text-gray-300 mb-2">Lessons learned</h3>
+          <h3 class="text-gray-900 dark:text-gray-100 mb-2">Lessons learned</h3>
           <p class="text-sm">
             This project has been a valuable learning experience, especially in
             building from scratch. I've gained a good understanding of Nuxt,
@@ -147,7 +147,7 @@ import ScrollTop from "primevue/scrolltop";
       </section>
 
       <section>
-        <h3 class="text-gray-300 mb-2">Features plan to add later</h3>
+        <h3 class="text-gray-900 dark:text-gray-100 mb-2">Features plan to add later</h3>
         <ul class="ml-4 text-sm">
           <li>
             Sorting the watchlist and favorites by rating and release year.

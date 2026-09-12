@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   id: number;
   title: string;
   description: string;
@@ -8,6 +8,8 @@ defineProps<{
   link: string;
   github: string;
 }>();
+
+const isInternalLink = computed(() => props.link.startsWith('/'));
 </script>
 
 <template>
@@ -17,8 +19,8 @@ defineProps<{
     <!-- Image Box -->
     <a
       :href="link"
-      target="_blank"
-      rel="noopener noreferrer"
+      :target="isInternalLink ? undefined : '_blank'"
+      :rel="isInternalLink ? undefined : 'noopener noreferrer'"
       tabindex="-1"
       class="relative block overflow-hidden aspect-video"
     >
@@ -39,9 +41,9 @@ defineProps<{
       >
         <a
           :href="link"
-          target="_blank"
+          :target="isInternalLink ? undefined : '_blank'"
           class="decoration-none text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400"
-          rel="noopener noreferrer"
+          :rel="isInternalLink ? undefined : 'noopener noreferrer'"
           >{{ title }}</a
         >
       </h4>
@@ -80,8 +82,8 @@ defineProps<{
         <a
           v-if="link"
           :href="link"
-          target="_blank"
-          rel="noopener noreferrer"
+          :target="isInternalLink ? undefined : '_blank'"
+          :rel="isInternalLink ? undefined : 'noopener noreferrer'"
           class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-1 ml-2 decoration-none"
           title="Live Demo"
         >

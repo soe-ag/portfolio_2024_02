@@ -3,6 +3,18 @@
 /* Order */
 @layer reset, primevue;
 
+:root {
+  --app-text: #1f2937;
+}
+
+.dark {
+  --app-text: #d1d5db;
+}
+
+body {
+  color: var(--app-text);
+}
+
 /* Reset CSS */
 @layer reset {
   * {

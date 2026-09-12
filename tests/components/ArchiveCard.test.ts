@@ -44,6 +44,21 @@ describe('ArchiveCard', () => {
     expect(imageLink).toBeDefined()
     expect(githubLink).toBeDefined()
     expect(imageLink?.attributes('href')).toBe('https://example.com')
+    expect(imageLink?.attributes('target')).toBe('_blank')
     expect(githubLink?.attributes('href')).toBe('https://github.com/test')
+  })
+
+  it('opens internal project pages in the current window', async () => {
+    const component = await mountSuspended(ArchiveCard, {
+      props: {
+        ...mockProps,
+        link: '/works/movie-db'
+      }
+    })
+
+    const links = component.findAll('a')
+    expect(links[0]?.attributes('target')).toBeUndefined()
+    expect(links[1]?.attributes('target')).toBeUndefined()
+    expect(links[3]?.attributes('target')).toBeUndefined()
   })
 })
