@@ -29,6 +29,13 @@ export default defineNuxtConfig({
   unocss: {
     nuxtLayers: true,
   },
+  nitro: {
+    // Netlify's function bundler can omit Vue when it remains externalized.
+    // Bundle it into the server function so SSR requests can resolve it.
+    externals: {
+      inline: ["vue", /^@vue\//],
+    },
+  },
   primevue: {
     usePrimeVue: true,
     options: {
