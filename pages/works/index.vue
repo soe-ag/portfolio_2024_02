@@ -35,6 +35,7 @@ const groupedItems = computed(() => {
           <ArchiveCard
             v-for="item in groupedItems[category]"
             :id="item.id"
+            :slug="item.slug"
             :key="item.id"
             :title="item.title"
             :description="item.description"

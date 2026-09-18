@@ -7,6 +7,7 @@ export const projectCategories = [
 export const professionalWorks = [
   {
     id: 10,
+    slug: "locus",
     category: "Professional Works",
     title: "Locus",
     description:
@@ -18,6 +19,7 @@ export const professionalWorks = [
   },
   {
     id: 1,
+    slug: "techful",
     category: "Professional Works",
     title: "TechFUL (discontinued)",
     description:
@@ -29,6 +31,7 @@ export const professionalWorks = [
   },
   {
     id: 2,
+    slug: "botha-gallery-website",
     category: "Professional Works",
     title: "Botha Gallery Website",
     description:
@@ -41,6 +44,7 @@ export const professionalWorks = [
   },
   {
     id: 3,
+    slug: "botha-official-website",
     category: "Professional Works",
     title: "Botha Official Website",
     description:
@@ -52,6 +56,7 @@ export const professionalWorks = [
   },
   {
     id: 4,
+    slug: "botha-competition-website",
     category: "Professional Works",
     title: "Botha Competition Website",
     description:
@@ -63,6 +68,7 @@ export const professionalWorks = [
   },
   {
     id: 5,
+    slug: "egodiva-marketing-website",
     category: "Professional Works",
     title: "Egodiva Marketing Website",
     description:
@@ -88,6 +94,7 @@ export const agenticCoding = [
   // },
   {
     id: 1,
+    slug: "options-journal",
     category: "Agentic Coding",
     title: "Options Journal",
     description:
@@ -99,6 +106,7 @@ export const agenticCoding = [
   },
   {
     id: 2,
+    slug: "share-finance",
     category: "Agentic Coding",
     title: "Share Finance",
     description:
@@ -110,6 +118,7 @@ export const agenticCoding = [
   },
   {
     id: 3,
+    slug: "my-finance",
     category: "Agentic Coding",
     title: "My Finance",
     description:
@@ -121,6 +130,7 @@ export const agenticCoding = [
   },
   {
     id: 4,
+    slug: "ecommerce-platform",
     category: "Agentic Coding",
     title: "Ecommerce Platform",
     description:
@@ -132,6 +142,7 @@ export const agenticCoding = [
   },
   {
     id: 4,
+    slug: "repo-monitor",
     category: "Agentic Coding",
     title: "Repo Monitor",
     description:
@@ -146,28 +157,31 @@ export const agenticCoding = [
 export const personalProjects = [
   {
     id: 1,
+    slug: "movie-db",
     category: "Personal Projects",
     title: "Personalized Movie Database",
     description:
       "Simple movie database designed to track and save watchlist and favorites, tailored to personal preferences.",
     tech: ["Vue 3", "Nuxt 3", "TailwindCSS"],
     image: "/images/part-movie.png",
-    link: "/works/movie-db",
+    link: "https://movie-db-beta.netlify.app/",
     github: "",
   },
   {
     id: 2,
+    slug: "asset-tracker",
     category: "Personal Projects",
     title: "Asset Tracker",
     description:
       "Personalized asset tracking dashboard to monitor favorite assets and customizable charts, designed for simplicity and ease of use.",
     tech: ["Vue 3", "Nuxt 3", "TailwindCSS"],
     image: "/images/part-asset.png",
-    link: "/works/asset-tracker",
+    link: "https://asset-tracker-beta.netlify.app/",
     github: "",
   },
   {
     id: 3,
+    slug: "old-portfolio-website",
     category: "Personal Projects",
     title: "Old Portfolio Website",
     description:

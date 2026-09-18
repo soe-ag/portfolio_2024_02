@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const props = defineProps<{
   id: number;
+  slug?: string;
   title: string;
   description: string;
   tech: string[];
@@ -10,6 +11,8 @@ const props = defineProps<{
 }>();
 
 const isInternalLink = computed(() => props.link.startsWith('/'));
+const detailLink = computed(() => props.slug ? `/works/${props.slug}` : props.link);
+const isInternalDetailLink = computed(() => detailLink.value.startsWith('/'));
 </script>
 
 <template>
@@ -18,9 +21,9 @@ const isInternalLink = computed(() => props.link.startsWith('/'));
   >
     <!-- Image Box -->
     <a
-      :href="link"
-      :target="isInternalLink ? undefined : '_blank'"
-      :rel="isInternalLink ? undefined : 'noopener noreferrer'"
+      :href="detailLink"
+      :target="isInternalDetailLink ? undefined : '_blank'"
+      :rel="isInternalDetailLink ? undefined : 'noopener noreferrer'"
       tabindex="-1"
       class="relative block overflow-hidden aspect-video"
     >
@@ -40,10 +43,10 @@ const isInternalLink = computed(() => props.link.startsWith('/'));
         class="text-lg font-bold text-gray-900 dark:text-gray-100 mb-2 transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400"
       >
         <a
-          :href="link"
-          :target="isInternalLink ? undefined : '_blank'"
+          :href="detailLink"
+          :target="isInternalDetailLink ? undefined : '_blank'"
           class="decoration-none text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400"
-          :rel="isInternalLink ? undefined : 'noopener noreferrer'"
+          :rel="isInternalDetailLink ? undefined : 'noopener noreferrer'"
           >{{ title }}</a
         >
       </h4>
