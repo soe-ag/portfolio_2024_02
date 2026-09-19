@@ -2,7 +2,7 @@
 <!-- eslint-disable vue/html-self-closing -->
 <template>
   <div
-    class="text-gray-800 dark:text-gray-300 bg-slate-50 dark:bg-#040D12 flex justify-center items-center h-auto lg:h-90vh px-6 py-2 lg:p-8 transition-colors duration-300"
+    class="text-gray-800 dark:text-gray-300 bg-slate-50 dark:bg-#040D12 flex justify-center items-center h-auto lg:min-h-90vh px-6 py-2 lg:p-8 transition-colors duration-300"
   >
     <div class="grid lg:grid-cols-2 gap-1">
       <div class="m-4 p-2 flex justify-start lg:justify-center items-center">
