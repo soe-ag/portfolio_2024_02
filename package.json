@@ -13,7 +13,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@nuxt/eslint": "^1.15.2",
+    "@nuxt/eslint": "^1.16.0",
     "@primevue/themes": "4.5.4",
     "nuxt": "^4.4.8",
     "primevue": "4.5.5",
